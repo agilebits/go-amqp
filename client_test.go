@@ -24,6 +24,7 @@ func TestLinkOptions(t *testing.T) {
 				LinkProperty("x-opt-test2", "test2"),
 				LinkProperty("x-opt-test1", "test3"),
 				LinkPropertyInt64("x-opt-test4", 1),
+				LinkPropertyInt32("x-opt-test5", 2),
 				LinkSourceFilter("com.microsoft:session-filter", 0x00000137000000C, "123"),
 			},
 
@@ -43,6 +44,7 @@ func TestLinkOptions(t *testing.T) {
 				"x-opt-test1": "test3",
 				"x-opt-test2": "test2",
 				"x-opt-test4": int64(1),
+				"x-opt-test5": int32(2),
 			},
 		},
 		{
